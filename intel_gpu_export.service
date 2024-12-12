@@ -1,0 +1,14 @@
+[Unit]
+Description=Intel GPU Metrics Export Service
+After=network.target
+
+[Service]
+Type=simple
+WorkingDirectory=/opt/monitor/intel_gpu_export
+ExecStart=/usr/bin/python3 intel_gpu_metrics_export.py
+ExecStop=/bin/kill -s TERM $MAINPID
+Restart=always
+User=root 
+
+[Install]
+WantedBy=multi-user.target

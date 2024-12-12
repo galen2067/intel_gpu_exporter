@@ -1,0 +1,4 @@
+apt update 
+apt install    intel-gpu-tools   -y
+
+pip3 install   prometheus_client 
