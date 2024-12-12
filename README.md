@@ -1,0 +1,2 @@
+# intel_gpu_exporter
+intel的GPU显卡指标采集，结合python的prometheuse客户端进行导出，采集的指标可以在Grafana上展示。
